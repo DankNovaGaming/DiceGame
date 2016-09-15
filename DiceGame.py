@@ -1,3 +1,4 @@
+#Daniel Kent edited this code :P
 import random
 import time
 ComputerPoints=1
@@ -6,7 +7,7 @@ Points=5
 Tutorial=(input("Type yes to learn how to play, type somthing else to skip:"))
 if Tutorial==("yes"):
 	print ("")
-	print("You choose a number, and the computer chooses a number. Everyone starts off with 1 point. Player starts off with 0 steals(Which can be bought from shop(a power-up)). If you get the same number you kill the computer and you get 1 point. If you both get different numbers the computer gets a point. You can only choose numbers from 1-6. If Computer gets 5 points YOU LOOSE if you gets 5 points YOU WIN! Hard eh? Are you brave enough? You will get the hang of it :)")
+	print("You choose a number, and the computer chooses a number. Everyone starts off with 1 point. Player starts off with 0 steals(Which can be bought from shop(a power-up)). If you get the same number you kill the computer and you get 1 point. If you both get different numbers the computer gets a point. You can only choose numbers from 1-5. If Computer gets 5 points YOU LOOSE if you gets 5 points YOU WIN! Hard eh? Are you brave enough? When PC gets 0 points you win! You will get the hang of it :)")
 	print ("")
 	print ("Changing in 30 seconds...")
 	time.sleep(25)
