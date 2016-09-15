@@ -1,3 +1,4 @@
 # DiceGame
 First code
-sean and jesse
+Coded by: Jesse
+Tam: Sean la Grange, Jesse George Ehrenreich
