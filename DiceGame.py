@@ -65,7 +65,7 @@ if Tutorial!=("yes"):
 			time.sleep(7)
 			print ("Computer> Oops sorry i was checking my texts, choose a number now")
 			time.sleep(5)
-		for i in range(0,100):
+		for i in rang
 			print ("")
 		print ("                                                                      *SHOP*   You have ", Points, " Points")
 		print ("Items in stock: steal(Makes PC feel bad) (Costs: 2 Points)")
