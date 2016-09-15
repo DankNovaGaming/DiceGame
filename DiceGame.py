@@ -1,8 +1,9 @@
 import random
 import time
+import sys 
 ComputerPoints=1
 steal=0
-Points=0
+Points=1
 Tutorial=(input("Type yes to learn how to play, type somthing else to skip:"))
 if Tutorial==("yes"):
 	print ("")
@@ -22,16 +23,41 @@ if Tutorial==("yes"):
 	for i in range(0,100):
 		print ("")
 if Tutorial!=("yes"):
-	for i in range(0,10):
-		ComputerText=random.randint(1,4)
-		if Points==5:
-			for i in range(0,10000):
-				print("GAME OVER YOU WIN")
-		if ComputerPoints==5:
-			for i in range(0,1000):
-				print("YOU LOOSE")
+	for i in range(0,100):
+		ComputerText=random.randint(1,5)
+		if Points>=5:
+			for i in range(0,100):
+				print ("")
+			print("GAME OVER YOU WIN")
+			print ("You had", Points," Points")
+			print ("Computer had", ComputerPoints," ComputerPoints")
+			sys.exit()
+		if ComputerPoints>=5:
+			print ("YOU LOOSE")
+			sys.exit()
 		for i in range(0,100):
 			print ("")
+		if ComputerText==5:
+			print  ("                                                             *CHAT*")                   
+			print ("Computer> Why did the graphics card cross the road...")
+			time.sleep(3)
+			print ("Computer> To get a better view")
+			time.sleep(7)
+			print ("Computer> Why are you not laughing :(")
+			time.sleep(3)
+			print ("Computer> Okay now tell me a joke")
+			Joke=(input("You> "))
+			JokeRandom=random.randint(1,2)
+			if JokeRandom==1:
+				print ("Computer> Ooo! I like that joke! Take a point                                           +1 POINT")
+				print ("                                                                                        COMPUTER -1 POINT")
+				Points=Points+1
+				time.sleep(5)
+			if JokeRandom==2:
+				print ("Computer> Ahh! I hate that joke. So lame...                                             -1 POINT")
+				print ("                                                                                        COMPUTER +1 POINT")
+				Points=Points-1
+				time.sleep(5)
 		if ComputerText==4:
 			print  ("                                                             *CHAT*")                   
 			print ("Computer> I actually don't like progrmming.")
@@ -39,6 +65,8 @@ if Tutorial!=("yes"):
 			print ("Computer> Programming*. I actually made this game :P. The iroy.")
 			time.sleep(7)
 			print ("Computer> irony*. You are a cool guy, i will give you one point :).                             +1 POINTS")
+			print ("                                                                                        COMPUTER -1 POINT")
+			ComputerPoints=ComputerPoints-1
 			Points=Points+1
 			time.sleep(5)
 		if ComputerText==3:
@@ -47,23 +75,38 @@ if Tutorial!=("yes"):
 			time.sleep(3)
 			print ("Computer> Do you play LoL?")
 			time.sleep(4)
-			print ("Computer> Eh... LoL is for nerds...a")
-			time.sleep(2)
+			print ("Computer> Eh... LoL is for nerds... I play LoL............ I don't deserve this point            +1 POINT          ")
+			print ("                                                                                                 COMPUTER -1 POINT")
+			Points=Points+1
+			ComputerPoints=ComputerPoints+1
+			time.sleep(3)
 		if ComputerText==2:
 			print  ("                                                             *CHAT*")                   
 			print ("Computer> Uhm... Since i am an Acer computer. Is my parents Acer?!")
 			time.sleep(3)
 			print ("Computer> Yeah om lonly")
 			time.sleep(3)
-			print ("Computer> I could be watching NetFlix")
-			time.sleep(3)
+			print ("Computer> Do you like me? yes or no be honest")
+			Like=(input("You> "))
+			if Like==("yes"):
+				print ("Computer> I like you too <3                                                               +1 POINT")
+				print ("                                                                                        COMPUTER -1 POINT")
+				ComputerPoints=ComputerPoints-1
+				Points=Points+1
+				time.sleep(3)
+			if Like==("no"):
+				print ("Computer> I don't like you too                                                          -1 POINT")
+				print ("                                                                                        COMPUTER +1 POINT")
+				ComputerPoints=ComputerPoints+1
+				Points=Points-1
+				time.sleep(3)
 		if ComputerText==1:
 			print  ("                                                             *CHAT*")                   
 			print ("Computer> I have ", ComputerPoints, " Points... Not bad")
 			time.sleep(5)
 			print ("Computer> K lets play now")
 			time.sleep(7)
-			print ("Computer> Oops sorry i was checking my texts, choose a number now")
+			print ("Computer> I don't know what number to choose :p 1 or 4? :p")
 			time.sleep(5)
 		for i in range(0,100):
 			print ("")
@@ -137,5 +180,4 @@ if Tutorial!=("yes"):
 			time.sleep(7)
 			print ("______________________")
 			for i in range(0,100):
-				print ("")	
-		
+				print ("")
