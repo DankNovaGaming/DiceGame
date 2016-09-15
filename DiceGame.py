@@ -2,7 +2,7 @@ import random
 import time
 ComputerPoints=1
 steal=0
-Points=5
+Points=0
 Tutorial=(input("Type yes to learn how to play, type somthing else to skip:"))
 if Tutorial==("yes"):
 	print ("")
