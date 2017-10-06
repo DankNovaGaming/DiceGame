@@ -1,7 +1,12 @@
+import turtle 
 import random
 import time
 import sys 
 ComputerPoints=1
+turtle=T
+for i in range (100000):
+	t.fd(100)
+	t.lt(100)
 steal=0
 Points=1
 Tutorial=(input("Type yes to learn how to play, type somthing else to skip:"))
